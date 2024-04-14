@@ -1,23 +1,56 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+  const [cards] = useState([
+    {
+      title: 'CSS (Basic)'
+    },
+    {
+      title: 'Java (Basic)'
+    },
+    {
+      title: 'C++ (Basic)'
+    },
+    {
+      title: 'Python (Basic)'
+    },
+    {
+      title: 'Javascript (Intermediate)'
+    },
+    {
+      title: 'Node (Basic)'
+    },
+    {
+      title: 'Node.js (Intermediate)'
+    },
+    {
+      title: 'React (Basic)'
+    },
+    {
+      title: 'SQL (Basic)'
+    },
+  ])
+  return (    
+    <div>
+      <section>
+        <div className="container">
+          <h1>Get Certified</h1>
+          <div className="cards">
+            {
+              cards.map((card, i) => (
+                <div key = {i} className="card">
+              <h3>
+                {card.title}
+              </h3>
+              <button className="btn">
+                Take Test
+              </button>
+            </div>
+              ))
+            }
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
