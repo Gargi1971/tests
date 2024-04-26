@@ -1,58 +1,18 @@
-import { useState } from "react";
+import React from "react";
+import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
+import QuizCSS from "./components/QuizCSS";
+import Home from "./Home";
 
-function App() {
-  const [cards] = useState([
-    {
-      title: 'CSS (Basic)'
-    },
-    {
-      title: 'Java (Basic)'
-    },
-    {
-      title: 'C++ (Basic)'
-    },
-    {
-      title: 'Python (Basic)'
-    },
-    {
-      title: 'Javascript (Intermediate)'
-    },
-    {
-      title: 'Node (Basic)'
-    },
-    {
-      title: 'Node.js (Intermediate)'
-    },
-    {
-      title: 'React (Basic)'
-    },
-    {
-      title: 'SQL (Basic)'
-    },
-  ])
-  return (    
-    <div>
-      <section>
-        <div className="container">
-          <h1>Get Certified</h1>
-          <div className="cards">
-            {
-              cards.map((card, i) => (
-                <div key = {i} className="card">
-              <h3>
-                {card.title}
-              </h3>
-              <button className="btn">
-                Take Test
-              </button>
-            </div>
-              ))
-            }
-          </div>
-        </div>
-      </section>
-    </div>
+function App(){  
+  return (   
+    <div className="App">
+      <Router>
+        <Routes>
+          <Route path ="/" element= {<Home />} />
+          <Route path ="/QuizCSS" element= {<QuizCSS />} />
+        </Routes>
+      </Router>
+    </div>  
   );
 }
-
 export default App;
