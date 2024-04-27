@@ -1,11 +1,11 @@
 import React from 'react'
 
-function QuizCSS(){
+function QuizCpp(){
     return(
         <div>
-            <h1>Quiz css</h1>
+            <h1>Quiz cpp</h1>
         </div>
     );
 }
 
-export default QuizCSS;
+export default QuizCpp;

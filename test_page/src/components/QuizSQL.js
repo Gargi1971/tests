@@ -1,11 +1,11 @@
 import React from 'react'
 
-function QuizCSS(){
+function QuizSQL(){
     return(
         <div>
-            <h1>Quiz css</h1>
+            <h1>Quiz sql</h1>
         </div>
     );
 }
 
-export default QuizCSS;
+export default QuizSQL;

@@ -1,11 +1,11 @@
 import React from 'react'
 
-function QuizCSS(){
+function QuizJava(){
     return(
         <div>
-            <h1>Quiz css</h1>
+            <h1>Quiz java</h1>
         </div>
     );
 }
 
-export default QuizCSS;
+export default QuizJava;
