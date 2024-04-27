@@ -1,9 +1,12 @@
 import React from 'react'
+import QCss from "./QCss.js"
+import "./quiz.css"
+
 
 function QuizCSS(){
     return(
         <div>
-            <h1>Quiz css</h1>
+            <QCss/>
         </div>
     );
 }

@@ -1,9 +1,11 @@
 import React from 'react'
+import QJava from "./QJava.js"
+import "./quiz.css"
 
 function QuizJava(){
     return(
         <div>
-            <h1>Quiz java</h1>
+            <QJava />
         </div>
     );
 }

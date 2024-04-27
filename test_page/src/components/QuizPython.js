@@ -1,9 +1,11 @@
 import React from 'react'
+import QPython from "./QPython.js"
+import "./quiz.css"
 
 function QuizPython(){
     return(
         <div>
-            <h1>Quiz Python</h1>
+            <QPython />
         </div>
     );
 }
